@@ -69,7 +69,19 @@
             tools:text="&quot;Tuna&quot;" />
 
         <TextView
+            android:id="@+id/wordHint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{gameViewModel.wordHint}"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/timer_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/word_text" />
+
+        <TextView
             android:id="@+id/timer_text"
+            android:text="@{gameViewModel.currentTimeString}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
