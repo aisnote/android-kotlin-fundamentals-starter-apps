@@ -40,7 +40,7 @@ class GameViewModel: ViewModel() {
         Log.i("GameViewModel", "GameViewModel destroyed!")
     }
 
-    private fun onGameFinish() {
+    fun onGameFinish() {
         _eventGameFinish.value = true
     }
 
